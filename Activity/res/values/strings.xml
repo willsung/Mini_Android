@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_frt_name">First Show</string>
+    <string name="activity_sec_name">Second Show</string>
+    <string name="activity_trd_name">Third Show</string>
+    <string name="myButton_main_1">First</string>
+    <string name="myButton_main_2">Second</string>
+    <string name="myButton_main_3">Third</string>
+    <string name="mytv_main">Main</string>
+    <string name="backButton">Back</string>
+    <string name="etHint">Please Insert 1|2|3 Here.</string>
+    <string name="myetButton">Go</string>
+    <string name="frt">1</string>
+    <string name="sec">2</string>
+    <string name="trd">3</string>
+    <string name="tv_main01">夜雨寄北 李商隐    </string>
+    <string name="tv_main02">君问归期未有期,\n巴山夜雨涨秋池.\n何当共剪西窗烛,\n却话巴山夜雨时.</string>
+    <string name="exit">Exit</string>
+    <string name="about">About</string>
+    
+</resources>

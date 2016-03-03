@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Slide</string>
+    <string name="frt">First Activity</string>
+	<string name="sec">Second Activity</string>
+    <string name="trd">Third Activity</string>
+    <string name="slideto2">Go To</string>
+    <string name="slideto1">Go Back</string>
+	<string name="forward">Forward</string>
+	<string name="back">Back</string>
+	<string name="exit">退出</string>
+	<string name="about">关于</string>
+</resources>

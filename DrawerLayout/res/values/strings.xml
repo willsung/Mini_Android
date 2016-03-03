@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DrawerLayout</string>
+    <string name="action_settings">Settings</string>
+    <string name="textView">Hello world!</string>
+    <string name="view_main">主内容界面</string>
+    <string name="drawer_menu">侧拉菜单</string>
+    <string name="firstFragment">第一个Fragment</string>
+    <string name="nextFragment">第二个Fragment</string>
+    <string name="thirdFragment">第三个Fragment</string>
+    <string name="loading">加载中…, &#8230;</string>
+
+</resources>
