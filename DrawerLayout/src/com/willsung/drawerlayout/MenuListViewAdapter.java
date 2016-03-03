@@ -13,15 +13,15 @@ import android.widget.TextView;
    
 public class MenuListViewAdapter extends BaseAdapter { 
 	
-	//¶¨ÒåÒ»¸öÁĞ±íList£¬ÓÃÀ´´æ´¢HashMap£¬HashMapÖĞµÄkeyÊÇString£¬valueÒ²ÊÇString
+	//å®šä¹‰ä¸€ä¸ªåˆ—è¡¨Listï¼Œç”¨æ¥å­˜å‚¨HashMapï¼ŒHashMapä¸­çš„keyæ˜¯Stringï¼Œvalueä¹Ÿæ˜¯String
     private List<HashMap<String, String>> lists;  
     
-    //InflaterÓÃÀ´µ÷ÓÃxml²¼¾ÖÎÄ¼ş£¬µ«ÊÇµ÷ÓÃµÄ²¼¾ÖÎÄ¼şÊÇÒş²ØµÄ
+    //Inflaterç”¨æ¥è°ƒç”¨xmlå¸ƒå±€æ–‡ä»¶ï¼Œä½†æ˜¯è°ƒç”¨çš„å¸ƒå±€æ–‡ä»¶æ˜¯éšè—çš„
     private LayoutInflater mInflater;  
     
-    //¶¨ÒåÊÊÅäÆ÷£¬½«List¶ÔÏóÓ³Éäµ½ViewÖĞ²¢ÏÔÊ¾³öÀ´
+    //å®šä¹‰é€‚é…å™¨ï¼Œå°†Listå¯¹è±¡æ˜ å°„åˆ°Viewä¸­å¹¶æ˜¾ç¤ºå‡ºæ¥
     public MenuListViewAdapter(Context context, List<HashMap<String, String>> dataList) {  
-        //´ÓContextÖĞ»ñµÃÒ»¸ö²¼¾ÖÌî³äÆ÷£¬ÕâÑù¾Í¿ÉÒÔÊ¹ÓÃÕâ¸öÌî³äÆ÷À´°Ñxml²¼¾ÖÎÄ¼ş×ªÎªView¶ÔÏó
+        //ä»Contextä¸­è·å¾—ä¸€ä¸ªå¸ƒå±€å¡«å……å™¨ï¼Œè¿™æ ·å°±å¯ä»¥ä½¿ç”¨è¿™ä¸ªå¡«å……å™¨æ¥æŠŠxmlå¸ƒå±€æ–‡ä»¶è½¬ä¸ºViewå¯¹è±¡
     	mInflater = LayoutInflater.from(context);  
         lists = dataList;  
     }  
@@ -44,30 +44,30 @@ public class MenuListViewAdapter extends BaseAdapter {
     @Override 
 public View getView(final int position, View convertView, ViewGroup parent) {  
         
-    	//¶¨ÒåÒ»¸öViewHolder£¬ÓÃÀ´´æ´¢²»Í¬View¡£
+    	//å®šä¹‰ä¸€ä¸ªViewHolderï¼Œç”¨æ¥å­˜å‚¨ä¸åŒViewã€‚
     	ViewHolder holder = null;  
         if (convertView == null) {  
             holder = new ViewHolder();  
-            //convertViewÍ¨¹ıinflateµ÷ÓÃ³öĞèÒªµÄ²¼¾ÖÎÄ¼ş
+            //convertViewé€šè¿‡inflateè°ƒç”¨å‡ºéœ€è¦çš„å¸ƒå±€æ–‡ä»¶
             convertView = mInflater.inflate(R.layout.main_listitem, null);  
             holder.menu = (TextView) convertView.findViewById(R.id.menu);  
-            //setTag()·½·¨ÊÇ½«À¨ºÅÖĞµÄÊı¾İ£¬Ò²¾ÍÊÇView·ÅÈëViewHolder
+            //setTag()æ–¹æ³•æ˜¯å°†æ‹¬å·ä¸­çš„æ•°æ®ï¼Œä¹Ÿå°±æ˜¯Viewæ”¾å…¥ViewHolder
             convertView.setTag(holder);  
         } else {  
-        	//getTag()·½·¨ÊÇ½«Ä¿±ê(Ò²¾ÍÊÇViewHolder)ÖĞµÄÊı¾İ(Ò²¾ÍÊÇView)È¡³öÀ´
+        	//getTag()æ–¹æ³•æ˜¯å°†ç›®æ ‡(ä¹Ÿå°±æ˜¯ViewHolder)ä¸­çš„æ•°æ®(ä¹Ÿå°±æ˜¯View)å–å‡ºæ¥
             holder = (ViewHolder) convertView.getTag();  
         }  
-        // ÉèÖÃ±³¾°É«  
-        //ÆæÊıĞĞ
+        // è®¾ç½®èƒŒæ™¯è‰²  
+        //å¥‡æ•°è¡Œ
         //if(position%2==1){  
         //	convertView.setBackgroundColor(Color.rgb(220, 220, 220));  
         //}
-         //Å¼ÊıĞĞ 
+         //å¶æ•°è¡Œ 
         //else {  
         //	convertView.setBackgroundColor(Color.rgb(255, 250, 250));  
         //} 
          
-        if (lists.size() > 0) {  //ÁĞ±í²»Îª¿Õ
+        if (lists.size() > 0) {  //åˆ—è¡¨ä¸ä¸ºç©º
             final Map<String, String> map = lists.get(position);  
             String number = map.get("menu");  
             holder.menu.setText(number);  
@@ -76,6 +76,6 @@ public View getView(final int position, View convertView, ViewGroup parent) {
     }  
    
     static class ViewHolder {  
-        TextView   menu;    //²Ëµ¥Ãû³Æ  
+        TextView   menu;    //èœå•åç§°  
     }  
 }

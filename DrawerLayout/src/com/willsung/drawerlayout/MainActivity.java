@@ -15,16 +15,16 @@ import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;  
    
 /** 
- * ³éÌëĞ§¹û 
- * DrawerLayoutÓëFragmentµÄÁªÓÃ 
- * DrawerLayoutÏà¹Ø£º 
- * 1.Ò»°ãÄÚÈİ²ãÊ¹ÓÃframelayout 
- * 2.slidingLayoutĞèÒªÉèÖÃÒ»¸ölayout_grativeÊôĞÔ 
- * ÎÄµµ½¨ÒéÊ¹ÓÃandroid:layout_gravity="start" 
+ * æŠ½å±‰æ•ˆæœ 
+ * DrawerLayoutä¸Fragmentçš„è”ç”¨ 
+ * DrawerLayoutç›¸å…³ï¼š 
+ * 1.ä¸€èˆ¬å†…å®¹å±‚ä½¿ç”¨framelayout 
+ * 2.slidingLayoutéœ€è¦è®¾ç½®ä¸€ä¸ªlayout_grativeå±æ€§ 
+ * æ–‡æ¡£å»ºè®®ä½¿ç”¨android:layout_gravity="start" 
  */ 
 public class MainActivity extends FragmentActivity{  
       
-    private DrawerLayout mDrawer_layout;  //³éÌëÊ½²¼¾Ö  
+    private DrawerLayout mDrawer_layout;  //æŠ½å±‰å¼å¸ƒå±€  
     private LinearLayout mMenu_layout;   
                         
     @Override 
@@ -36,7 +36,7 @@ public class MainActivity extends FragmentActivity{
         ListView menu_listview = (ListView) mMenu_layout.findViewById(R.id.menu_listView);  
         ArrayList<HashMap<String, String>> tempMapList = ListBuiltUtils.getMainMapList();  
         menu_listview.setAdapter(new MenuListViewAdapter( getApplicationContext(), tempMapList));  
-        //²Ëµ¥ListViewÉèÖÃ¼àÌıÊÂ¼ş  
+        //èœå•ListViewè®¾ç½®ç›‘å¬äº‹ä»¶  
         menu_listview.setOnItemClickListener(new DrawerItemClickListener());  
     }  
                         
@@ -46,7 +46,7 @@ public class MainActivity extends FragmentActivity{
         public void onItemClick(AdapterView<?> parent, View view, int position, long id){  
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();  
             Fragment fragment = null;  
-            //¸ù¾İitemµã»÷ĞĞºÅÅĞ¶ÏÆôÓÃÖ¸¶¨Fragment  
+            //æ ¹æ®itemç‚¹å‡»è¡Œå·åˆ¤æ–­å¯ç”¨æŒ‡å®šFragment  
             switch (position){  
                 case 0:  
                     fragment = new FirstFragment();  
@@ -60,7 +60,7 @@ public class MainActivity extends FragmentActivity{
             }  
             ft.replace(R.id.fragment_layout, fragment);  
             ft.commit();  
-            mDrawer_layout.closeDrawer(mMenu_layout);//µã»÷ºó¹Ø±ÕmMenu_layout  
+            mDrawer_layout.closeDrawer(mMenu_layout);//ç‚¹å‡»åå…³é—­mMenu_layout  
         }  
     }  
 }

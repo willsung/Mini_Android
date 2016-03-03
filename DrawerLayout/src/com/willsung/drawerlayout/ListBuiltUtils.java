@@ -5,25 +5,25 @@ import java.util.HashMap;
    
 public class ListBuiltUtils {  
    
-	//³éÌëÖĞÑ¡ÏîĞĞÊı£º
+	//æŠ½å±‰ä¸­é€‰é¡¹è¡Œæ•°ï¼š
     public static ArrayList<HashMap<String,String>> getMainMapList(){  
         ArrayList<HashMap<String, String>> tempMapList = new ArrayList<HashMap<String,String>>();  
            
         for(int i=0;i<3;i++){  
             HashMap<String, String> tempMap = new HashMap<String, String>();  
-            tempMap.put("menu", "³éÌë²Ëµ¥ "+(i+1));  
+            tempMap.put("menu", "æŠ½å±‰èœå• "+(i+1));  
             tempMapList.add(tempMap);  
         }  
         return tempMapList;  
     }  
     
-    //³éÌëÃ¿Ò»Ïîµ÷ÓÃ³öµÄÒ³ÃæÖĞÑ¡ÏîĞĞÊı£º
+    //æŠ½å±‰æ¯ä¸€é¡¹è°ƒç”¨å‡ºçš„é¡µé¢ä¸­é€‰é¡¹è¡Œæ•°ï¼š
     public static ArrayList<HashMap<String,String>> getFirstMapList(){  
         ArrayList<HashMap<String, String>> tempMapList = new ArrayList<HashMap<String,String>>();  
            
         for(int i=0;i<2;i++){  
             HashMap<String, String> tempMap = new HashMap<String, String>();  
-            tempMap.put("menu", "FirstFragmentÑ¡Ïî "+(i+1));  
+            tempMap.put("menu", "FirstFragmenté€‰é¡¹ "+(i+1));  
             tempMapList.add(tempMap);  
         }  
         return tempMapList;  
@@ -34,7 +34,7 @@ public class ListBuiltUtils {
            
         for(int i=0;i<2;i++){  
             HashMap<String, String> tempMap = new HashMap<String, String>();  
-            tempMap.put("menu", "SecondFragment²Ëµ¥  "+(i+1));  
+            tempMap.put("menu", "SecondFragmentèœå•  "+(i+1));  
             tempMapList.add(tempMap);  
         }  
         return tempMapList;  

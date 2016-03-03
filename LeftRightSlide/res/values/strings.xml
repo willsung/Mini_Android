@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Slide</string>
+	<string name="app_name">Slide_Anim</string>
     <string name="frt">First Activity</string>
 	<string name="sec">Second Activity</string>
     <string name="trd">Third Activity</string>
