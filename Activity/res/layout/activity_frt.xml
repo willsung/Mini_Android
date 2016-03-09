@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Activity" >
-
+	<!-- Back -->
 	<Button 
         android:id="@+id/myButton_frt_back"
         android:layout_width="wrap_content"
@@ -18,6 +18,7 @@
         android:text="@string/backButton"
 		android:background="#80000000"
         />
+	<!-- 1 -->
 	<TextView 
         android:id="@+id/mytv_frt"
         android:layout_width="wrap_content"
@@ -27,4 +28,25 @@
         android:text="@string/frt"
         android:textSize="100sp"
 		/>
+	<!-- Audio -->
+	<!-- Stop -->
+
+	<Button
+	    android:id="@+id/myButton_play"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/myButton_frt_back"
+	    android:layout_marginBottom="104dp"
+	    android:layout_toLeftOf="@+id/mytv_frt"
+	    android:text="@string/audio" />
+
+	<Button
+	    android:id="@+id/myButton_stop"
+	    android:layout_width="72dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/myButton_play"
+	    android:layout_alignBottom="@+id/myButton_play"
+	    android:layout_toRightOf="@+id/mytv_frt"
+	    android:text="@string/stop" />
+
 </RelativeLayout>

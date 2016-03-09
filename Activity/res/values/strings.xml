@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Activity</string>
+    <string name="app_name">Demo</string>
     <string name="action_settings">Settings</string>
     <string name="activity_frt_name">First Show</string>
     <string name="activity_sec_name">Second Show</string>
@@ -20,5 +20,7 @@
     <string name="tv_main02">君问归期未有期,\n巴山夜雨涨秋池.\n何当共剪西窗烛,\n却话巴山夜雨时.</string>
     <string name="exit">Exit</string>
     <string name="about">About</string>
+    <string name="audio">开始</string>
+    <string name="stop">停止</string>
     
 </resources>
