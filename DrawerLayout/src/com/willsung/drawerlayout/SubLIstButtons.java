@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class SubLIstButtons extends Activity implements OnClickListener{
 
@@ -13,7 +14,7 @@ public class SubLIstButtons extends Activity implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.sublistbuttons);
+		setContentView(R.layout.sublistbuttonsm);
 		
 		Button sulistbutton = (Button)findViewById(R.id.subListButton);
 		sulistbutton.setOnClickListener(new OnClickListener() {
@@ -21,7 +22,7 @@ public class SubLIstButtons extends Activity implements OnClickListener{
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				
+				Toast.makeText(getApplicationContext(), "SubButton Clicked!", Toast.LENGTH_SHORT).show();
 			}
 		});
 	}

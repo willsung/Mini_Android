@@ -10,8 +10,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;  
 import android.view.View;  
 import android.widget.AdapterView;  
+import android.widget.Button;
 import android.widget.LinearLayout;  
 import android.widget.ListView;  
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;  
    
 /** 
@@ -49,13 +51,16 @@ public class MainActivity extends FragmentActivity{
             //根据item点击行号判断启用指定Fragment  
             switch (position){  
                 case 0:  
-                    fragment = new FirstFragment();  
+                    fragment = new FirstFragment();
+                    Toast.makeText(getApplicationContext(), "First", Toast.LENGTH_SHORT).show();
                     break;  
                 case 1:  
                     fragment = new SecondFragment();  
+                    Toast.makeText(getApplicationContext(), "Second", Toast.LENGTH_SHORT).show();
                     break;  
                 default:  
-                     fragment = new ThirdFragment();  
+                     fragment = new ThirdFragment();
+                     Toast.makeText(getApplicationContext(), "Third", Toast.LENGTH_SHORT).show();
                     break;  
             }  
             ft.replace(R.id.fragment_layout, fragment);  

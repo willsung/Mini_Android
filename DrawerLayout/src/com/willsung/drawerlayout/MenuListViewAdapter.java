@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;  
 import android.widget.BaseAdapter;  
 import android.widget.TextView;  
+import android.widget.Toast;
    
 public class MenuListViewAdapter extends BaseAdapter { 
 	
@@ -32,7 +33,7 @@ public class MenuListViewAdapter extends BaseAdapter {
     }  
    
     @Override 
-    public Object getItem(int position) {  
+    public Object getItem(int position) {
         return lists.get(position);  
     }  
    

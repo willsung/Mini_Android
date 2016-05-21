@@ -11,15 +11,14 @@
         android:textSize="16sp"
         android:id="@+id/textTextView"/> 
     <LinearLayout 
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-    	android:gravity="center" >	
-    	<TextView 
-	    	android:id="@+id/textView"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_gravity="center_vertical"
-	    	android:text="@string/textView"
-	    	android:textSize="30sp"/>
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">  
+        <ListView 
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content" 
+            android:cacheColorHint="#FFFFFF" 
+            android:id="@+id/thirdFragmentListView">  
+        </ListView> 
      </LinearLayout>
 </LinearLayout>

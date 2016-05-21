@@ -21,13 +21,14 @@
                 android:text="@string/view_main"/>  
         </FrameLayout>  
         
-        <LinearLayout 
+        <LinearLayout
             android:id="@+id/menu_layout" 
             android:layout_width="280dp" 
             android:layout_height="match_parent" 
             android:layout_gravity="start" 
             android:background="#ff333333" 
             android:orientation="vertical" >  
+            <!-- 侧拉菜单最顶图片 -->
             <ImageView 
                 android:layout_width="match_parent" 
                 android:layout_height="wrap_content" 
